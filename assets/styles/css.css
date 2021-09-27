@@ -1,0 +1,137 @@
+body{
+    background: rgb(38,38,38);
+    background: linear-gradient(90deg, rgba(38,38,38,1) 0%, rgba(69,69,69,1) 50%, rgba(38,38,38,1) 100%);
+}
+
+.border_black{
+    border-color: black;
+    border: solid;
+}
+
+#Compétences>div{
+    float: center;
+}
+
+h2{
+    color:#4D6AD6;
+}
+
+h4{
+    color: #6ACCCC;
+    font-size: small;
+}
+
+p{
+    color:lightgray;
+}
+
+body>div>div>div{
+    background-color: #383838;
+    margin: 1%;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.rose{
+    background-color: #AA9ED8;
+}
+
+#accueil{
+    width: 100%;
+    height: 70vh;
+    /*background-image: url("https://img.freepik.com/photos-gratuite/lieu-travail-joueur-ordinateur-nouveau-clavier-jeu-souris-ecouteurs-pc-moderne-neon-bleu-rouge-flou_403156-220.jpg?size=626&ext=jpg");*/
+    background-position: center;
+    background-size: cover;
+    /*-webkit-filter: blur(15px);*/
+}
+
+#nom{
+    padding-top: 50%;
+    margin-top: 10%;
+    vertical-align:middle;
+    display: table-cell;
+    z-index: 8;
+    -webkit-filter:none;
+}
+
+/*.purple{
+    background-color: rgba(169, 62, 240, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    opacity: 0.5;
+    -webkit-filter: blur(15px);
+}*/
+
+
+
+@media screen and (max-width: 500px) {
+    .textOverImage{
+        font-size: 1em;
+    }
+    #menubar{
+        background-color: black;
+    }
+ }
+
+ .textOverImage{
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    background-size: 100%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.textOverImage:hover{
+    background-size: 110%;
+}
+.textOverImage:after{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    color:#fff;
+    padding: 0 8px;
+    opacity: 0;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.textOverImage:hover:after{
+    opacity: 1;
+    top:50%;
+    padding: 8px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.textOverImage{
+    color:#fff;
+    text-shadow: black 2px 2px 3px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#menubar{
+    display: block;
+    position:fixed;
+    z-index: 4;
+    width: 100%;
+    font-size: 2em;
+    vertical-align:middle ;
+    text-align: center;
+}
+
+nav>div>a{
+    color:black;
+    text-decoration: none;
+    position: absolute;
+}
