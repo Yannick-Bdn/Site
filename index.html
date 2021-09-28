@@ -4,7 +4,7 @@
         <title>CV Yannick Bauduin</title>
         <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
         <link rel="stylesheet" href="assets/styles/css.css">
-        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <script src="assets/lib/aos-master/dist/aos.js"></script>
         <link rel="stylesheet" href="assets/lib/aos-master/dist/aos.css">
 
@@ -13,85 +13,90 @@
     <body>
         <nav id="menubar">
             <div class="row">
-                 <div class="col-md-3 rose border_black"><a href="#Exp" style="text-decoration: none;">Expérience Professionnelle</a></div>
-                <div class="col-md-3 rose border_black"><a href="#Comp" style="text-decoration: none;">Compétences</a></div>
-                <div class="col-md-3 rose border_black"><a href="#Info" style="text-decoration: none;">Informatique</a></div>
-                <div class="col-md-3 rose border_black"><a href="#Int" style="text-decoration: none;">Centres d'intérêt</a></div>
+                <div class="col-md-2 "><a href="#Exp" style="text-decoration: none;" class="fas fa-user"></a></div>
+                <div class="col-md-2 "><a href="#Exp" style="text-decoration: none;"  class="fas fa-briefcase"></a></div>
+                <div class="col-md-2 "><a href="#Comp" style="text-decoration: none;"  class="fas fa-medal"></a></div>
+                <div class="col-md-2 "><a href="#Info" style="text-decoration: none;"  class="fas fa-code"></a></div>
+                <div class="col-md-2 "><a href="#Int" style="text-decoration: none;"  class="fab fa-medapps"></a></div>
+                <div class="col-md-2 "><a href="#Int" style="text-decoration: none;"  class="fas fa-download"></a></div>
             </div>
         </nav>
-        <div id="accueil" class="purple">
+        <div id="accueil">
             <div class="accueil">
                 <h1 id="nom">
-                    <i class="fas fa-cog mycog">Yannick Bauduin, <i>20 ans</i></i>
+                    <span class="fas prenom" id="nom">Yannick Bauduin, <span class="age">20 ans</span></span> 
                 </h1>
             </div>
         </div>
         <div class="container rose border_black">
-        <div>
-            <h1>Profil Personnel</h1>
+            <div>
+                <h1 class="fas fa-user" id="Propos"> A propos :</h1>
+                <div>
+                    <h2>Étudiant en DUT Informatique</h2>
+                    <p>Passionné d'informatique depuis le Lycée, j'ai été attiré par le développement, le fait d'écrire quelque chose pour avoir un rendu sur l'écran.</p>
+                </div>
+            </div>
+            <hr></hr>
+            <div class="container-fluid">
+                <h1 id="Exp">Expérience Professionnelle</h1>
+                <div data-aos="fade-right">
+                    <h4>02/2020</h4>
+                    <h2>Appro. BAFA - Handicap et Différences</h2>
+                    <p>S.T.A.J. Nord Artois - Valenciennes</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h4>07/2019</h4>
+                    <h2>Animateur BAFA - ACM</h2>
+                    <p>Mairie - St Amand les Eaux</p>
+                </div>
+                <div data-aos="fade-right">
+                    <h4>04/2019</h4>
+                    <h2>Stage Pratique BAFA - ACM</h2>
+                    <p>Mairie - St Amand les Eaux</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h4>02/2019</h4>
+                    <h2>Stage Pratique BAFA - ACM</h2>
+                    <p>Mairie - St Amand les Eaux</p>
+                </div>
+                <div data-aos="fade-right">
+                    <h4>02/2019</h4>
+                    <h2>Bases BAFA</h2>
+                    <p>S.T.A.J. Nord Artois - Valenciennes</p>
+                </div>
+                <div data-aos="fade-left">
+                    <h4>06/2015</h4>
+                    <h2>Stage en Ressources Humaines - PPDC</h2>
+                    <p>La Poste - Petite Forêt</p>
+                </div>
+                <div data-aos="fade-right">
+                    <h4>06/2014</h4>
+                    <h2>Stage en Boulangerie</h2>
+                    <p>L'Amandine - St Amand les Eaux</p>
+                </div>
+            </div>
+            <hr></hr>
+            <div id="Compétences">
+                <h1 id="Comp">Compétences</h1>
+                <div class="row border_black" style="margin: 1%;">
+                    <div class="col-md-4 textOverImage" style="background-image:url(assets/img/événement.png)" data-text="Qu'ils soient festifs (soirées BDE..) ou d'ordre professionnel (stand de prévention routière à la PPDC de petite forêt)">Planification d'événements</div>
+                    <div class="col-md-4 textOverImage" style="background-image:url(assets/img/secours.png)" data-text="Établies au lycée au près d'un formateur aux premiers secours.">Connaissance des premiers secours</div>
+                    <div class="col-md-4 textOverImage" style="background-image:url(assets/img/équipe.png)" data-text="J'ai toujours à coeur d'aller vers les autres et de m'intéresser à eux.">Esprit d'équipe</div>
+                    <div class="col-md-6 textOverImage" style="background-image:url(assets/img/chef.png)" data-text="Dans mon rôle de Président de BDE, ou dans mes projets de groupe, on vient naturellement vers moi pour me demander conseil, ou pour regrouper les idées, car je sais rediriger les membres de mon groupe vers leurs compétences propres.">Meneur de groupe</div>
+                    <div class="col-md-6 textOverImage" style="background-image:url(assets/img/oral.png)" data-text="Avec mes années de Théâtre, je n'ai plus peur de m'exposer aux autres, en étant convaincu de mes idées, je suis capable de les expliquer et de les défendre.">Aisance à l'oral</div>
+                </div>
+            </div>
+            <hr></hr>
+            <div id="#Informatique">
+                <h1 id="Info">Informatique</h1>
+            </div>
+            <hr></hr>
+            <div id="#Interet">
+                <h1 id="Int">Centres d'intérêt</h1>
+            </div>
         </div>
-        <hr></hr>
-        <div class="container">
-            <h1 id="Exp">Expérience Professionnelle</h1>
-            <div data-aos="fade-right">
-                <h4>02/2020</h3>
-                <h2>Appro. BAFA - Handicap et Différences</h2>
-                <p>S.T.A.J. Nord Artois - Valenciennes</p>
-            </div>
-            <div data-aos="fade-left">
-                <h4>07/2019</h3>
-                <h2>Animateur BAFA - ACM</h2>
-                <p>Mairie - St Amand les Eaux</p>
-            </div>
-            <div data-aos="fade-right">
-                <h4>04/2019</h3>
-                <h2>Stage Pratique BAFA - ACM</h2>
-                <p>Mairie - St Amand les Eaux</p>
-            </div>
-            <div data-aos="fade-left">
-                <h4>02/2019</h3>
-                <h2>Stage Pratique BAFA - ACM</h2>
-                <p>Mairie - St Amand les Eaux</p>
-            </div>
-            <div data-aos="fade-right">
-                <h4>02/2019</h3>
-                <h2>Bases BAFA</h2>
-                <p>S.T.A.J. Nord Artois - Valenciennes</p>
-            </div>
-            <div data-aos="fade-left">
-                <h4>06/2015</h3>
-                <h2>Stage en Ressources Humaines - PPDC</h2>
-                <p>La Poste - Petite Forêt</p>
-            </div>
-            <div data-aos="fade-right">
-                <h4>06/2014</h3>
-                <h2>Stage en Boulangerie</h2>
-                <p>L'Amandine - St Amand les Eaux</p>
-            </div>
-        </div>
-        <hr></hr>
-        <div id="Compétences">
-            <h1 id="Comp">Compétences</h1>
-            <div class="row border_black" style="margin: 1%;">
-                <div class="col-md-4 textOverImage" style="background-image:url(assets/img/événement.png)" data-text="Qu'ils soient festifs (soirées BDE..) ou d'ordre professionnel (stand de prévention routière à la PPDC de petite forêt)">Planification d'événements</div>
-                <div class="col-md-4 textOverImage" style="background-image:url(assets/img/secours.png)" data-text="Établies au lycée au près d'un formateur aux premiers secours.">Connaissance des premiers secours</div>
-                <div class="col-md-4 textOverImage" style="background-image:url(assets/img/équipe.png)" data-text="J'ai toujours à coeur d'aller vers les autres et de m'intéresser à eux.">Esprit d'équipe</div>
-                <div class="col-md-6 textOverImage" style="background-image:url(assets/img/chef.png)" data-text="Dans mon rôle de Président de BDE, ou dans mes projets de groupe, on vient naturellement vers moi pour me demander conseil, ou pour regrouper les idées, car je sais rediriger les membres de mon groupe vers leurs compétences propres.">Meneur de groupe</div>
-                <div class="col-md-6 textOverImage" style="background-image:url(assets/img/oral.png)" data-text="Avec mes années de Théâtre, je n'ai plus peur de m'exposer aux autres, en étant convaincu de mes idées, je suis capable de les expliquer et de les défendre.">Aisance à l'oral</div>
-            </div>
-        </div>
-        <hr></hr>
-        <div id="#Informatique">
-            <h1 id="Info">Informatique</h1>
-        </div>
-        <hr></hr>
-        <div id="#Interet">
-            <h1 id="Int">Centres d'intérêt</h1>
-        </div>
-    </div>
         <script>
             AOS.init();
         </script>
     </body>
-    
 </html>
