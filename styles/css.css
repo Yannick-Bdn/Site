@@ -1,0 +1,147 @@
+body{
+    background: rgb(38,38,38);
+    background: linear-gradient(90deg, rgba(38,38,38,1) 0%, rgba(69,69,69,1) 50%, rgba(38,38,38,1) 100%);
+}
+
+.border_black{
+    border-color: black;
+    border: solid;
+}
+
+#Compétences>div{
+    float: center;
+}
+h1{
+    margin:1%;
+    padding: 1%;
+}
+
+h2{
+    font-size: 2em;
+    color:#4D6AD6;
+}
+
+h4{
+    color: #6ACCCC;
+    font-size: small;
+}
+
+p{
+    font-size: 1.5em;
+    color:lightgray;
+}
+
+body>div>div>div{
+    background-color: #383838;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.rose{
+    background-color: #AA9ED8;
+}
+
+#accueil{
+    width: 100%;
+    height: 70vh;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#nom {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    transform: translateX(-40%) translateY(-50%);
+    color:lightgray;
+    font-family: cursive;
+    width: 75%;
+    margin-left : 20%;
+}
+
+#nom .prenom{
+    font-size: 2em;
+}
+
+#nom .age{
+    font-size: 0.5em;
+}
+
+@media screen and (max-width: 500px) {
+    .textOverImage{
+        font-size: 1em;
+    }
+ }
+
+ .textOverImage{
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    background-size: 100%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.textOverImage:hover{
+    background-size: 110%;
+}
+.textOverImage:after{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    color:#fff;
+    padding: 0 8px;
+    opacity: 0;
+    content: attr(data-text);
+    transition: 0.5s;
+}
+
+.textOverImage:hover:after{
+    opacity: 1;
+    top:50%;
+    padding: 8px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.textOverImage{
+    color:#fff;
+    text-shadow: black 2px 2px 3px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#menubar{
+    display: block;
+    position:fixed;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    background-color: pink;
+    z-index: 99;
+}
+
+
+nav>div>div>a{
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    padding-top: 1%;
+}
+
+
+nav>div>div>a:hover{
+    color:gray;
+}
+
+li{
+    color: lightgray;
+    font-size: 1.5em;
+}
